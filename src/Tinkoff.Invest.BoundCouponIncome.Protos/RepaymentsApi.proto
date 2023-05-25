@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "Tinkoff.Invest.BoundCouponIncome.Api";
+    
+service RepaymentsApi {
+  rpc GetAllRepayments(GetAllRepaymentsRequest) returns (GetAllRepaymentsResponse);
+}
+    
+message GetAllRepaymentsRequest {
+  string api_key = 1;
+}
+
+message GetAllRepaymentsResponse {
+  repeated Repayments repayments = 1;
+}
+
+message Repayments {
+  string account_name = 1;
+  string instrument_name = 2;
+  google.protobuf.Timestamp date = 3;
+  double amount = 4;
+  RepaymentsType type = 5;
+  
+  enum RepaymentsType{
+    unknwon = 0;
+    coupon = 2;
+    maturity = 3;
+  }
+}

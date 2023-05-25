@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Tinkoff.Invest.BoundCouponIncome.Core\Tinkoff.Invest.BoundCouponIncome.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CSharpFunctionalExtensions" Version="2.39.0" />
+      <PackageReference Include="LinqSpecs" Version="3.2.0" />
+    </ItemGroup>
+
+</Project>

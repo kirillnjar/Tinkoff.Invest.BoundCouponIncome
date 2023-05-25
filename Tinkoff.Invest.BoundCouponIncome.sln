@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C4441B69-0062-4101-8AC7-C8ECC4D7B586}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{97CF2165-B774-4654-B938-291DDA423B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome", "src\Tinkoff.Invest.BoundCouponIncome\Tinkoff.Invest.BoundCouponIncome.csproj", "{3B3E5D87-4924-405B-817D-67C64A5E8CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome.Core", "src\Tinkoff.Invest.BoundCouponIncome.Core\Tinkoff.Invest.BoundCouponIncome.Core.csproj", "{1314E077-2A0D-4943-95C7-ED8C3DA11739}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome.Infrastructure", "src\Tinkoff.Invest.BoundCouponIncome.Infrastructure\Tinkoff.Invest.BoundCouponIncome.Infrastructure.csproj", "{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome.Protos", "src\Tinkoff.Invest.BoundCouponIncome.Protos\Tinkoff.Invest.BoundCouponIncome.Protos.csproj", "{8BF70C56-D1EF-407A-9699-CEFFD6556C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome.Service", "src\Tinkoff.Invest.BoundCouponIncome.Service\Tinkoff.Invest.BoundCouponIncome.Service.csproj", "{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.Invest.BoundCouponIncome.Test", "tests\Tinkoff.Invest.BoundCouponIncome.Test\Tinkoff.Invest.BoundCouponIncome.Test.csproj", "{64756E99-7FC8-4FA8-A84C-8F614D30449E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{8A0809C5-853F-4192-B887-1AA8A6CC7B31}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		dockerfile = dockerfile
+		entrypoint.sh = entrypoint.sh
+		README.md = README.md
+		deploy\docker-compose.yml = deploy\docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B3E5D87-4924-405B-817D-67C64A5E8CB8} = {C4441B69-0062-4101-8AC7-C8ECC4D7B586}
+		{1314E077-2A0D-4943-95C7-ED8C3DA11739} = {C4441B69-0062-4101-8AC7-C8ECC4D7B586}
+		{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47} = {C4441B69-0062-4101-8AC7-C8ECC4D7B586}
+		{8BF70C56-D1EF-407A-9699-CEFFD6556C0B} = {C4441B69-0062-4101-8AC7-C8ECC4D7B586}
+		{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0} = {C4441B69-0062-4101-8AC7-C8ECC4D7B586}
+		{64756E99-7FC8-4FA8-A84C-8F614D30449E} = {97CF2165-B774-4654-B938-291DDA423B14}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B3E5D87-4924-405B-817D-67C64A5E8CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3E5D87-4924-405B-817D-67C64A5E8CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3E5D87-4924-405B-817D-67C64A5E8CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3E5D87-4924-405B-817D-67C64A5E8CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1314E077-2A0D-4943-95C7-ED8C3DA11739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1314E077-2A0D-4943-95C7-ED8C3DA11739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1314E077-2A0D-4943-95C7-ED8C3DA11739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1314E077-2A0D-4943-95C7-ED8C3DA11739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF23F55E-BE0B-4B48-AF1F-19143DBF6F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF70C56-D1EF-407A-9699-CEFFD6556C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF70C56-D1EF-407A-9699-CEFFD6556C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF70C56-D1EF-407A-9699-CEFFD6556C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF70C56-D1EF-407A-9699-CEFFD6556C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC29914-5F74-44DD-8EA2-C95BE27ACBC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64756E99-7FC8-4FA8-A84C-8F614D30449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64756E99-7FC8-4FA8-A84C-8F614D30449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64756E99-7FC8-4FA8-A84C-8F614D30449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64756E99-7FC8-4FA8-A84C-8F614D30449E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

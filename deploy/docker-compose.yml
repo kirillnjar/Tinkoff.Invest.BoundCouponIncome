@@ -1,0 +1,10 @@
+﻿version: '3.8'
+
+services:
+  merch-api:
+    build:
+      context: ../.
+      dockerfile: dockerfile
+    ports:
+      - "8084:80"
+    hostname: merch-api
